@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon2077", "Amazon2077\Amazon2077.csproj", "{0BF1E91D-309C-40C0-BA2A-E2F83265D11B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF1E91D-309C-40C0-BA2A-E2F83265D11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF1E91D-309C-40C0-BA2A-E2F83265D11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF1E91D-309C-40C0-BA2A-E2F83265D11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF1E91D-309C-40C0-BA2A-E2F83265D11B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B052178-ECF3-48C4-A530-DF412424DAA4}
+	EndGlobalSection
+EndGlobal
