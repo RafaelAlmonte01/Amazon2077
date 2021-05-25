@@ -67,18 +67,14 @@
                                             <input asp-for="Input.Email" placeholder="Correo Electronico" class="form-control" />
                                             <span asp-validation-for="Input.Email" class="text-danger"></span>
                                         </div>
+
                                         <div class="form-group">
-                                            <input asp-for="Input.Password" placeholder="ContraseÃ±a" class="form-control" />
-                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                            <input asp-for="Input.Contraseña" placeholder="Contraseña" class="form-control" />
+                                            <span asp-validation-for="Input.Contraseña" class="text-danger"></span>
                                         </div>
-                                        <div class="form-group">
-                                            @* @Html.DropDownList("Input.Role", new SelectList(Model.Input.rolesLista, "Text", "Text"), "Seleccione un roll", new { @class = "Form-control" });*@
-                                        </div>
+
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary btn-block">Registrar</button>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="text-danger">@Html.DisplayFor(m => m.Input.ErrorMessage) </label>
                                         </div>
                                     </div>
                                 </div>
