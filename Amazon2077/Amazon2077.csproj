@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Usuarios\Data\" />
+    <Folder Include="Areas\Usuarios\Data\Migrations\" />
+    <Folder Include="Data\Migrations\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
