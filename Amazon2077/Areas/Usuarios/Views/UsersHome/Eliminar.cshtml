@@ -1,0 +1,14 @@
+﻿@page "/Usuarios/Eliminar"
+@model Amazon2077.Areas.Usuarios.Models.InputModelRegister
+@{
+}
+
+<a href="/Home" class="btn btn-primary">Volver</a>
+
+<form method="Post" action="/UsersHome/Eliminar" class="form-horizontal">
+    @Html.HiddenFor(obj => obj.NID)
+
+    <h1>Estas seguro que quieres elimar el registro?</h1>
+    <button type="submit" class="btn btn-danger"> Eliminar </button>
+
+</form>

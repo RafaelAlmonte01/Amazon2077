@@ -5,10 +5,10 @@
     var image = "/Imagenes/Imagen/default.png";
 }
 
-<h1> <a href="/Home" class="btn btn-primary">Volver</a> </h1>
+<a href="/Home" class="btn btn-primary">Volver</a>
 
 <div class="container p-4">
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" action="/UsersHome/Registrar">
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="card text-center">
@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <div class="caption text-center">
                             <label class="btn btn-primary" for="files">Cargar Foto</label>
-                            <input asp-for="Input.AvatarImage" accept="image/*" type="file" id="files" />
+                            <input asp-for="Image" accept="image/*" type="file" id="file" />
 
                         </div>
                     </div>
@@ -48,29 +48,29 @@
                                      data-parent="#acordionExample">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <input asp-for="Input.NID" placeholder="NID" class="form-control" autofocus />
-                                            <span asp-validation-for="Input.NID" class="text-danger"></span>
+                                            <strong>NID</strong>
+                                            @Html.TextBoxFor(a => a.NID, new { @class = "form-control" })
                                         </div>
                                         <div class="form-group">
-                                            <input asp-for="Input.Nombre" placeholder="Nombre" class="form-control" />
-                                            <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+                                            <strong>Nombre</strong>
+                                            @Html.TextBoxFor(a => a.Nombre, new { @class = "form-control" })
                                         </div>
                                         <div class="form-group">
-                                            <input asp-for="Input.Apellido" placeholder="Apellido" class="form-control" />
-                                            <span asp-validation-for="Input.Apellido" class="text-danger"></span>
+                                            <strong>Apellido</strong>
+                                            @Html.TextBoxFor(a => a.Apellido, new { @class = "form-control" })
                                         </div>
                                         <div class="form-group">
-                                            <input asp-for="Input.NumeroDeTelefono" placeholder="Telefono" class="form-control" />
-                                            <span asp-validation-for="Input.NumeroDeTelefono" class="text-danger"></span>
+                                            <strong>Numero de telefono</strong>
+                                            @Html.TextBoxFor(a => a.NumeroDeTelefono, new { @class = "form-control" })
                                         </div>
                                         <div class="form-group">
-                                            <input asp-for="Input.Email" placeholder="Correo Electronico" class="form-control" />
-                                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                            <strong>Email</strong>
+                                            @Html.TextBoxFor(a => a.Email, new { @class = "form-control" })
                                         </div>
 
                                         <div class="form-group">
-                                            <input asp-for="Input.Contraseña" placeholder="Contraseña" class="form-control" />
-                                            <span asp-validation-for="Input.Contraseña" class="text-danger"></span>
+                                            <strong>Contrasena</strong>
+                                            @Html.TextBoxFor(a => a.Contraseña, new { @class = "form-control" })
                                         </div>
 
                                         <div class="form-group">

@@ -1,6 +1,47 @@
-﻿
+﻿@model IEnumerable<Amazon2077.Areas.Usuarios.Models.InputModelRegister>
 @{
     ViewData["Title"] = "Users";
 }
 
-<h1> Users </h1>
+<h1> Usuarios </h1>
+
+<table class="table-bordered table-striped align-content-center">
+    <thead>
+        <tr class="center">
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Numero de telefono</th>
+            <th>Email</th>
+            <th>Contraseña</th>
+            <th>Rol</th>
+
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+            <td>@item.Nombre</td>
+            <td>@item.Apellido</td>
+            <td>@item.NumeroDeTelefono</td>
+            <td>@item.Email</td>
+            <td>@item.Contraseña</td>
+            <td>@item.Tipo</td>
+            
+            <td class="center">
+
+                <a href="/UsersHome/Modificar/@item.NID" class="btn btn-warning">
+                    Modificar
+                </a>
+                <a href="/UsersHome/Eliminar/@item.NID" class="btn btn-danger">
+                    Eliminar
+                </a>
+            </td>
+
+        </tr>
+        }
+    </tbody>
+</table>

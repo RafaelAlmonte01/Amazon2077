@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar Producto</h2>
+
+<hr />
+
+<form action="@Url.Action("Agregar")" method="post">
+
+
+    <div class="panel-body">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <div id="header" class="bg-info">
+                        <h2 class="mb-0 t">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ingrese la Informacion
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#acordionExample">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <input type="text" name="Nombre" placeholder="Escribe el nombre del producto." class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Descripcion" placeholder="Escribe la Descripcion del producto." class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Imagen" placeholder="Escriba la Url de la imagen." class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="Precio" placeholder="Escriba el precio." class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-success" type="submit" value="Agregar" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<a href="/Home/ListaProductos" class="btn btn-danger">Cancelar</a>
+
+
+@section Scripts {
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            
+            
+        });
+    </script>
+}
